@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Players.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UpbeatFunk.wav" type="AudioStream" id=2]
 [ext_resource path="res://Enemy/Enemies.gd" type="Script" id=5]
 [ext_resource path="res://Asteroid/Asteroids.gd" type="Script" id=6]
 
@@ -48,3 +49,7 @@ margin_bottom = 40.0
 text = "Lives : 5"
 align = 2
 valign = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
